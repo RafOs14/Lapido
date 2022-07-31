@@ -1,0 +1,44 @@
+/*Configuraciones generales*/
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Configuraciones generales*/
+
+/*Estilos*/
+
+#formHubspot {
+    width: 80%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+#cardTrabajos {    
+    background-color: #fff;    
+    box-shadow: 0px 0px 10px rgb(126, 126, 126);
+}
+
+
+
+/*Media query*/
+
+@media screen and (max-width: 600px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #formHubspot {
+        width: 80%;
+    }
+}
+
+/*Media query*/
+
+
