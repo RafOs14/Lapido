@@ -46,13 +46,19 @@
                             Cursos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./cursos/interiores.html">Diseño de Interiores - Presencial y OnLine</a></li>
-                            <li><a class="dropdown-item" href="./cursos/decoracion.html">Decoración - Curso Presencial u OnLine</a></li>
-                            <li><a class="dropdown-item" href="./cursos/establecimientos.html">Diseño de Establecimientos comerciales y escaparatismo - curso</a></li>
-                            <li><a class="dropdown-item" href="./cursos/paisajismo.html">Curso Paisajismo - Montevideo y Ciudad de la Costa</a>
+                            <li><a class="dropdown-item" href="./cursos/interiores.html">Diseño de Interiores -
+                                    Presencial y OnLine</a></li>
+                            <li><a class="dropdown-item" href="./cursos/decoracion.html">Decoración - Curso Presencial u
+                                    OnLine</a></li>
+                            <li><a class="dropdown-item" href="./cursos/establecimientos.html">Diseño de
+                                    Establecimientos comerciales y escaparatismo - curso</a></li>
+                            <li><a class="dropdown-item" href="./cursos/paisajismo.html">Curso Paisajismo - Montevideo y
+                                    Ciudad de la Costa</a>
                             </li>
-                            <li><a class="dropdown-item" href="./cursos/parques.html">Curso Diseño de Parques y Jardines</a></li>
-                            <li><a class="dropdown-item" href="./cursos/jardineria.html">Curso de Especialización en Jardinería</a></li>
+                            <li><a class="dropdown-item" href="./cursos/parques.html">Curso Diseño de Parques y
+                                    Jardines</a></li>
+                            <li><a class="dropdown-item" href="./cursos/jardineria.html">Curso de Especialización en
+                                    Jardinería</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -73,7 +79,7 @@
 
     <!--Main Section-->
 
-    <div class="container mt-4" >
+    <div class="container mt-4">
         <div class="container" data-aos="zoom-in">
             <h3 class="text-center">LAPIDO Escuela de Diseño y Paisajismo</h3>
             <p class="text-center">
@@ -137,8 +143,16 @@
             </p>
         </div>
 
-        <!--Card Section-->
+        <!-- Instagram post section -->
+        <h3 class="text-center mt-5">Nuestras últimas novedades.</h3>
+        <hr>
+        <br>
+        <div class="container text-center igcontainer" id="instafeed-container" data-aos="zoom-out"></div>
+        <!-- End of instagram post section -->
 
+        <!--Card Section-->
+        <h3 class="text-center mt-5" data-aos="fade-down">Cursos destacados.</h3>
+        <hr>        
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
             <div class="col" data-aos="fade-up">
                 <div class="card" style="height: 28rem;">
@@ -163,7 +177,7 @@
                 </div>
             </div>
             <div class="col" data-aos="fade-up">
-                <div class="card" style="height: 28rem;" >
+                <div class="card" style="height: 28rem;">
                     <a href="#"><img src="./assets/card3.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <h5 class="card-title">DISEÑO DE ESPACIOS EXTERIORES</h5>
@@ -174,8 +188,9 @@
                 </div>
             </div>
         </div>
-
         <!--End Card Section-->
+
+
 
     </div>
 
@@ -188,12 +203,13 @@
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/escuela.lapido?_rdc=1&_rdr" role="button"><i
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://web.facebook.com/escuela.lapido?_rdc=1&_rdr" role="button"><i
                         class="fab fa-facebook-f"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/escuela.lapido/" role="button"><i
-                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/escuela.lapido/"
+                    role="button"><i class="fab fa-instagram"></i></a>
 
             </section>
             <!-- Section: Social media -->
@@ -265,18 +281,20 @@
                                 <a href="./cursos/interiores.html" class="text-white">Diseño de Interiores</a>
                             </li>
                             <li>
-                                <a href="./cursos/decoracion.html" class="text-white">Decoración - Curso Presencial u OnLine</a>
+                                <a href="./cursos/decoracion.html" class="text-white">Decoración - Curso Presencial u
+                                    OnLine</a>
                             </li>
                             <li>
                                 <a href="./cursos/paisajismo.html" class="text-white">Curso Paisajismo</a>
                             </li>
                             <li>
-                                <a href="./cursos/establecimientos.html" class="text-white">Diseño de Establecimientos comerciales</a>
+                                <a href="./cursos/establecimientos.html" class="text-white">Diseño de Establecimientos
+                                    comerciales</a>
                             </li>
                         </ul>
                     </div>
                     <!--Grid column-->
-                    
+
                 </div>
                 <!--Grid row-->
             </section>
@@ -306,6 +324,17 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+          get: 'user',
+          target: "instafeed-container",
+          resolution: 'high_resolution',
+          accessToken: 'IGQVJYaGdVWVhjOVA3VXBYUU1jR2xpTndHa05iYTRLV3JQRGIwdFE3RG1JZAW1xNGJxVjdnOVNVWGtDSVZA1aFhja1ViQTluejV4ak1ESzZAVVzdFbW1FRXctdUZARQnlRZADh3TXpVZAmJPUHZAnLXlvaFNrMwZDZD',
+          limit: 3
+        });
+        userFeed.run();
+      </script>
 
 </body>
 
