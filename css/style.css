@@ -23,6 +23,12 @@
     box-shadow: 0px 0px 10px rgb(126, 126, 126);
 }
 
+.igcontainer a img {
+    width: 350px;
+    height: 350px;
+    margin: 2px;
+    padding: 2px;
+}
 
 
 /*Media query*/
@@ -40,5 +46,3 @@
 }
 
 /*Media query*/
-
-
