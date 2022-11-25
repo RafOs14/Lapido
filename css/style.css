@@ -31,11 +31,20 @@
 h2, h3 {
     text-shadow: 1px 2px #999;
   }
+/*Titulos*/
 
 /*Listas*/
 .listas{
     list-style: none;
 }
+/*Listas*/
+
+/*Institucional*/
+#institucional{
+    background-color: rgb(247, 247, 247);
+    padding: 25px;        
+}
+/*institucional*/
 
 /*Media query*/
 
