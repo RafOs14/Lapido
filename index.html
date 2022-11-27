@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5f19319c98.js" crossorigin="anonymous"></script>
+    <!--User CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Lapido - Escuela de Diseño y Paisajismo</title>
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt=""
+                    style="width:100px; height: auto;" loading="lazy" data-aos="fade-right"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                </ul>
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="./pages/institucional.html">Institucional</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./cursos/interiores.html">Diseño de Interiores -
+                                    Presencial y OnLine</a></li>
+                            <li><a class="dropdown-item" href="./cursos/decoracion.html">Decoración - Curso Presencial u
+                                    OnLine</a></li>
+                            <li><a class="dropdown-item" href="./cursos/establecimientos.html">Diseño de
+                                    Establecimientos comerciales y escaparatismo - curso</a></li>
+                            <li><a class="dropdown-item" href="./cursos/paisajismo.html">Curso Paisajismo - Montevideo y
+                                    Ciudad de la Costa</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./cursos/parques.html">Curso Diseño de Parques y
+                                    Jardines</a></li>
+                            <li><a class="dropdown-item" href="./cursos/jardineria.html">Curso de Especialización en
+                                    Jardinería</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/trabajos.html">Trabajos de
+                            Alumnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar Section-->
+
+    <!--Main Section-->
+
+    <div class="container mt-4">
+        <div class="container" data-aos="zoom-in">
+            <h3 class="text-center">LAPIDO Escuela de Diseño y Paisajismo</h3>
+            <p class="text-center">
+                Estudia Diseño de Interiores, Decoración y Paisajismo en Uruguay
+            </p>
+        </div>
+
+        <!--Carousel Section-->
+
+        <div id="carouselExampleCaptions" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/slide1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>DECORACIÓN</h5>
+                        <a class="btn btn-warning" href="./cursos/decoracion.html">Leer Más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/slide2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>DISEÑO DE INTERIORES</h5>
+                        <a class="btn btn-warning" href="./cursos/interiores.html">Leer Más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/slide3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PAISAJISMO</h5>
+                        <a class="btn btn-warning" href="./cursos/paisajismo.html">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--End Carousel Section-->
+
+        <div class="container mt-5">
+            <h6 class="text-center">PROMOVEMOS LA FORMACIÓN DE PROFESIONALES, EN LAS ÁREAS DE DECORACIÓN, DISEÑO DE
+                INTERIORES Y PAISAJISMO</h6>
+            <p class="text-center">
+                <a class="btn btn-warning mt-2" href="./pages/institucional.html"> Quienes Somos </a>
+            </p>
+        </div>
+
+        <!-- Instagram post section -->
+        <h3 class="text-center mt-5">Nuestras últimas novedades.</h3>
+        <hr>
+        <br>
+        <div class="container text-center igcontainer" id="instafeed-container" data-aos="zoom-out"></div>
+        <!-- End of instagram post section -->
+
+        <!-- Carousel section Slider main container -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper container" data-aos="fade-down">
+            <h3 class="text-center mb-4">Actividades destacadas</h3>
+            <hr>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img1.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img2.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img3.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img4.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img5.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img6.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img7.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img8.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img9.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img10.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img11.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img12.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img13.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img14.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img15.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img16.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img17.jpg" alt="..." />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/Carousel/img18.jpg" alt="..." />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- End of carousel section -->
+
+        <!--Card Section-->
+        <h3 class="text-center mt-5" data-aos="fade-down">Cursos destacados.</h3>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
+            <div class="col" data-aos="fade-up">
+                <div class="card" style="height: 20rem;">
+                    <a href="#"><img src="./assets/card1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">ESPECIALIZACIÓN EN JARDINERÍA</h5>
+                        <p class="card-text">Curso teórico - práctico que promueve la formación técnica en el área de
+                            jardinería profesional. Comprende módulos teóricos y prácticos, lo cual aportará al 
+                            alumno el conocimiento de un sinnúmero de especies.</p>
+                        <a href="./cursos/jardineria.html">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-down">
+                <div class="card" style="height: 20rem;">
+                    <a href="#"><img src="./assets/card2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">VIDRIERAS Y DISEÑO COMERCIAL</h5>
+                        <p class="card-text">Curso corto que prepara al alumno para diseñar espacios comerciales y
+                            escaparates, brindándole las herramientas necesarias para interpretar los deseos y necesidades de sus potenciales clientes.</p>
+                        <a href="./cursos/establecimientos.html">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+                <div class="card" style="height: 20rem;">
+                    <a href="#"><img src="./assets/card3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">DISEÑO DE ESPACIOS EXTERIORES</h5>
+                        <p class="card-text">Curso de un año de duración, que capacita al alumno para crear y ambientar
+                            espacios exteriores y armonizarlos con la arquitectura pre existente.
+                            Podrá así mismo, representar gráficamente sus proyectos.</p>
+                        <a href="./cursos/parques.html">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Card Section-->
+
+
+
+    </div>
+
+    <!--End Main Section-->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://web.facebook.com/escuela.lapido?_rdc=1&_rdr" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/escuela.lapido/"
+                    role="button"><i class="fab fa-instagram"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lapido Escuela de Diseño y Paisajismo cuenta con el respaldo de ALAD en sus cursos.
+                    <a href="https://www.aladuruguay.com">ALAD Uruguay</a> es una organización internacional sin
+                    fines de lucro con sede en cada país de Latinoamérica, la cual nuclea diseñadores,
+                    instituciones privadas, públicas y promueve la inserción del diseño.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Páginas</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="./pages/institucional.html" class="text-white">Institucional</a>
+                            </li>
+                            <li>
+                                <a href="./pages/trabajos.html" class="text-white">Trabajos</a>
+                            </li>
+                            <li>
+                                <a href="./pages/contacto.html" class="text-white">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Sitios de Interes</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="./news/paredes.html" class="text-white">Paredes de Nuestros Hogares</a>
+                            </li>
+                            <li>
+                                <a href="./news/colores.html" class="text-white">Color en el Interiorismo</a>
+                            </li>
+                            <li>
+                                <a href="./news/jardines.html" class="text-white">Jardines</a>
+                            </li>
+                            <li>
+                                <a href="./news/disenador.html" class="text-white">Por qué contratar a un diseñador</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Cursos Destacados</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="./cursos/interiores.html" class="text-white">Diseño de Interiores</a>
+                            </li>
+                            <li>
+                                <a href="./cursos/paisajismo.html" class="text-white">Curso Paisajismo</a>
+                            </li>
+                            <li>
+                                <a href="./cursos/decoracion.html" class="text-white">Curso Decoración</a>
+                            </li>
+                            <li>
+                                <a href="./cursos/establecimientos.html" class="text-white">Diseño de Establecimientos
+                                    comerciales</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="">LAPIDO Escuela de Diseño y Paisajismo</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- animations AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            target: "instafeed-container",
+            resolution: 'high_resolution',
+            accessToken: 'IGQVJYaGdVWVhjOVA3VXBYUU1jR2xpTndHa05iYTRLV3JQRGIwdFE3RG1JZAW1xNGJxVjdnOVNVWGtDSVZA1aFhja1ViQTluejV4ak1ESzZAVVzdFbW1FRXctdUZARQnlRZADh3TXpVZAmJPUHZAnLXlvaFNrMwZDZD',
+            limit: 3
+        });
+        userFeed.run();
+    </script>
+
+    <!--Scripts-->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
