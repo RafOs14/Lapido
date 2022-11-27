@@ -81,4 +81,10 @@ h2, h3 {
     }
 }
 
+@media screen and (max-width: 700px) {
+    #cardTrabajos {
+        height: 28rem;
+    }
+}
+
 /*Media query*/
