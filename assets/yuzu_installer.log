@@ -1,0 +1,92 @@
+[20:15:56][liftinstall][INFO] yuzu installer
+[20:15:56][liftinstall][INFO] Starting fresh install
+[20:15:56][liftinstall::frontend::rest::server][INFO] Spawning server instance @ V6([::1]:60997)
+[20:15:56][liftinstall::frontend::rest::server][INFO] Spawning server instance @ V4(127.0.0.1:60997)
+[20:15:56][liftinstall::frontend::ui][INFO] Spawning web view instance
+[20:15:56][liftinstall::frontend::js][INFO] Making HTTP request to /api/dark-mode
+[20:15:56][liftinstall::frontend::js][INFO] Making HTTP request to /api/installation-status
+[20:15:56][liftinstall::frontend::js][INFO] Vue started
+[20:15:56][liftinstall::frontend::js][INFO] Making HTTP request to /api/config
+[20:15:56][liftinstall::frontend::rest::services::config][INFO] Downloading configuration from "https://raw.githubusercontent.com/yuzu-emu/liftinstall/master/config.windows.v10.toml"...
+[20:15:57][liftinstall::frontend::rest::services::config][INFO] Configuration file downloaded successfully.
+[20:15:57][liftinstall::frontend::js][INFO] Making HTTP request to /api/check-auth
+[20:15:57][liftinstall::frontend::rest::services::authentication][INFO] No passed in credential and no stored credentials to validate
+[20:15:57][liftinstall::frontend::js][INFO] Making HTTP request to /api/default-path
+[20:15:57][liftinstall::frontend::js][INFO] Next stop: "/packages"
+[20:16:03][liftinstall::frontend::js][INFO] Installer kind: regular
+[20:16:03][liftinstall::frontend::js][INFO] Installing desktop shortcut: true
+[20:16:03][liftinstall::frontend::js][INFO] Making streaming HTTP request to /api/start-install
+[20:16:03][liftinstall::frontend::rest::services::install][INFO] Found installDesktopShortcut "true"
+[20:16:03][liftinstall::installer][INFO] Framework: Installing ["yuzu"] to "C:\\Users\\rafol\\AppData\\Local\\yuzu"
+[20:16:03][liftinstall::installer][INFO] Dependency tree:
+InstallTask
+├── Pre EnsureOnlyInstanceTask
+├── Pre VerifyInstallDirTask (with clean-install = true)
+├── Pre InstallPackageTask (for "yuzu")
+│   ├── Pre DownloadPackageTask (for "yuzu")
+│   │   └── Pre CheckAuthorizationTask (for "yuzu")
+│   │       └── Pre ResolvePackageTask (for "yuzu")
+│   ├── Pre UninstallPackageTask (for "yuzu", optional = true)
+│   │   ├── Pre UninstallShortcutsTask (for "yuzu", optional = true)
+│   │   └── Post SaveDatabaseTask
+│   ├── Post InstallShortcutsTask (for "yuzu")
+│   ├── Post InstallDesktopShortcutTask (for "yuzu", should_run = true)
+│   └── Post SaveDatabaseTask
+├── Pre SaveExecutableTask
+├── Pre InstallGlobalShortcutsTask
+│   └── Post SaveDatabaseTask
+└── Post LaunchOnExitTask
+[20:16:03][liftinstall::tasks::resolver][INFO] Selected file: File { name: "yuzu-windows-msvc-20221129-9034d5328.tar.xz", url: "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-1255/yuzu-windows-msvc-20221129-9034d5328.tar.xz", requires_authorization: false }
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/avcodec-58.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/avutil-56.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/boost_context-vc143-mt-x64-1_79.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/dbghelp.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/fmt.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/icudtl.dat"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/libwinpthread-1.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/lz4.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc/mediaservice"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/mediaservice/dsengine.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/mediaservice/wmfengine.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc/plugins/imageformats"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc/plugins"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/plugins/imageformats/qgif.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/plugins/imageformats/qjpeg.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc/plugins/platforms"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/plugins/platforms/qwindows.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc/plugins/styles"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/plugins/styles/qwindowsvistastyle.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/qt.conf"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Core.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Gui.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Multimedia.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Network.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Positioning.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5PrintSupport.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Qml.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5QmlModels.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Quick.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5QuickWidgets.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5WebChannel.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5WebEngineCore.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5WebEngineWidgets.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/Qt5Widgets.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/QtWebEngineProcess.exe"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/qtwebengine_devtools_resources.pak"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/qtwebengine_resources.pak"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/qtwebengine_resources_100p.pak"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/qtwebengine_resources_200p.pak"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/SDL2.dll"
+[20:17:00][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/swscale-5.dll"
+[20:17:01][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/yuzu-cmd.exe"
+[20:17:01][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/yuzu-room.exe"
+[20:17:01][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/yuzu-windows-msvc-source-20221129-9034d5328.tar.xz"
+[20:17:01][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/yuzu.exe"
+[20:17:01][liftinstall::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc/zstd.dll"
+[20:17:01][liftinstall::native::natives][INFO] Generating shortcut @ "C:\\Users\\rafol\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\yuzu.lnk"
+[20:17:01][liftinstall::native::natives][INFO] Generating shortcut @ "C:\\Users\\rafol\\Desktop\\yuzu.lnk"
+[20:17:01][liftinstall::native::natives][INFO] Generating shortcut @ "C:\\Users\\rafol\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\yuzu Maintenance Tool.lnk"
+[20:17:42][liftinstall::frontend::js][INFO] Making HTTP request to /api/exit
+[20:17:42][liftinstall::installer][INFO] Shutting down installer framework...
+[20:17:42][liftinstall::installer][INFO] Launching "C:\\Users\\rafol\\AppData\\Local\\yuzu\\yuzu-windows-msvc/yuzu.exe"
