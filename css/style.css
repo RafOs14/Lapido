@@ -7,6 +7,11 @@
 
 /*Estilos*/
 
+/*Navbar*/
+.navbar{
+    background-color: rgba(161, 189, 255, 0.178);
+}
+
 #formHubspot {
     width: 80%;
     padding: 15px;
