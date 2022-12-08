@@ -63,12 +63,17 @@ h2, h3 {
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 300px;
+    height: 350px;
   }
 
   .swiper-slide img {
     display: block;
     width: 100%;
+  }
+
+  .imgSwiper {
+    width: 300px;
+    height: 300px;
   }
 /*Swiper*/
 
@@ -93,7 +98,7 @@ h2, h3 {
 }
 
 @media screen and (max-width: 700px) {
-    #cardCursos {
+    .cardCursos {
         height: 30rem;
     }
 }
