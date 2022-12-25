@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -416,8 +416,7 @@
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright:
-            <a class="text-white" href="">LAPIDO Escuela de Diseño y Paisajismo</a>
+             <a class="text-light">&copy; <span id="fecha" onload="getYear()"></span>. LAPIDO Escuela de Diseño y Paisajismo</a>
         </div>
         <!-- Copyright -->
     </footer>
@@ -453,6 +452,20 @@
 
     <!--Scripts-->
     <script src="./js/index.js"></script>
+    
+    <script>
+    //Obtener año actual
+
+        function getYear (){
+            const date = new Date();
+            const fecha = document.getElementById('fecha');
+            fecha.innerHTML = date.getFullYear();
+        }
+
+        getYear();
+
+    //Obtener año actual
+  </script>
 
 </body>
 
